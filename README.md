@@ -1,28 +1,28 @@
 # captcha_check
 # author: DYBOY
 
-项目简介：
-	利用captcha库生成的图形验证码，并对其进行内容识别。首先通过对验证码图片进行一个“灰度”处理，使之变为灰度图，灰度图有利于去除杂色，便于提高模型精度，提升训练速度。训练过程中，使用了三层CNN，最终的准确率达到98.75%
+###项目简介：
+利用 `captcha` 库生成的图形验证码，并对其进行内容识别。首先通过对验证码图片进行一个“`灰度`”处理，使之变为灰度图，灰度图有利于去除杂色，便于提高模型精度，提升训练速度。训练过程中，使用了`三层CNN`，最终的准确率最高可达到`98.75%`
 
 
-运行环境：
-	python3.6
-	tensorflow 1.10 (运行时，缺少什么就安装对应包 例如安装tensorflow：pip3 install tensorflow -i https://pypi.tuna.tsinghua.edu.cn/simple )
-	windows 10 家庭版
+###运行环境：
+- python3.6
+- tensorflow 1.10 (运行时，缺少什么就安装对应包 例如安装tensorflow：pip3 install tensorflow -i https://pypi.tuna.tsinghua.edu.cn/simple )
+- windows 10 家庭版
 
 
-USAGE:
-	训练模型：python3 model_train.py
-	
-	测试模型：python3 model_test.py
-	
-
-项目介绍文章地址：
-	https://blog.dyboy.cn/program/100.html
+###USAGE:
+- 训练模型：python3 model_train.py
+- 测试模型：python3 model_test.py
 	
 
-训练过程记录：
+###项目介绍文章地址：
+- https://blog.dyboy.cn/program/100.html
+	
 
+###训练过程记录：
+
+``` shell
 [root@VM_96_17_centos captcha]# /usr/local/bin/python3.6 model_train.py 
 2018-11-26 09:29:57.038117: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
 2018-11-26 09:29:57.408852: W tensorflow/core/framework/allocator.cc:122] Allocation of 41943040 exceeds 10% of system memory.
@@ -159,3 +159,4 @@ Mon Nov 26 17:07:35 2018  step: 12500  accuracy: 0.97
 Mon Nov 26 17:11:14 2018  step: 12600  accuracy: 0.9775
 Mon Nov 26 17:14:53 2018  step: 12700  accuracy: 0.985
 ...
+```
