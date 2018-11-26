@@ -1,26 +1,29 @@
 # captcha_check
 # author: DYBOY
 
-###项目简介：
+### 项目简介：
 利用 `captcha` 库生成的图形验证码，并对其进行内容识别。首先通过对验证码图片进行一个“`灰度`”处理，使之变为灰度图，灰度图有利于去除杂色，便于提高模型精度，提升训练速度。训练过程中，使用了`三层CNN`，最终的准确率最高可达到`98.75%`
 
 
-###运行环境：
+### 运行环境：
 - python3.6
 - tensorflow 1.10 (运行时，缺少什么就安装对应包 例如安装tensorflow：pip3 install tensorflow -i https://pypi.tuna.tsinghua.edu.cn/simple )
 - windows 10 家庭版
 
 
-###USAGE:
+### USAGE:
 - 训练模型：python3 model_train.py
 - 测试模型：python3 model_test.py
-	
 
-###项目介绍文章地址：
+### 效果：
+
+[![预测](https://upload-images.jianshu.io/upload_images/6661013-0740ed1f4da0e286.png "预测")](https://upload-images.jianshu.io/upload_images/6661013-0740ed1f4da0e286.png "预测")
+
+### 项目介绍文章地址：
 - https://blog.dyboy.cn/program/100.html
 	
 
-###训练过程记录：
+### 训练过程记录：
 
 ``` shell
 [root@VM_96_17_centos captcha]# /usr/local/bin/python3.6 model_train.py 
